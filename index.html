@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Choudhary — Frontend Developer</title>
+  <meta name="description" content="BCA 2nd Year | HTML · CSS · JavaScript | Building clean, mobile-first web interfaces" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">dev<span>.</span></div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+      <li><a href="https://github.com/devv0311" target="_blank" class="nav__link nav__link--cta">GitHub ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <div class="hero__tag reveal">Gurugram, India</div>
+      <h1 class="hero__name reveal">Dev<br><span>Choudhary</span></h1>
+      <p class="hero__role reveal">Frontend Developer</p>
+      <p class="hero__sub reveal">I build <em>clean, mobile-first websites</em> for real users —<br>fast turnaround, no fluff.</p>
+      <div class="hero__tech reveal">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+      <div class="hero__actions reveal">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk →</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 / About</div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <h2 class="section-title">Who I Am</h2>
+          <p>BCA 2nd year student from Pune with a hands-on approach to frontend development. I learn by building — every project in my portfolio started as a real-world problem I tried to solve.</p>
+          <p>I focus on HTML, CSS, and vanilla JavaScript, writing layouts that are responsive by default and interfaces that actually work on mobile. No framework crutches — just clean fundamentals.</p>
+          <div class="about__meta">
+            <div class="about__meta-item">
+              <span class="about__meta-num">3</span>
+              <span class="about__meta-label">Projects Live</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-num">BCA</span>
+              <span class="about__meta-label">2nd Year</span>
+            </div>
+            <div class="about__meta-item">
+              <span class="about__meta-num">2+</span>
+              <span class="about__meta-label">Years Coding</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__card reveal">
+          <div class="about__card-inner">
+            <img src="photo.jpg" alt="Dev Choudhary" class="about__photo" />
+            <div class="about__card-detail">
+              <p><strong>Dev Choudhary</strong></p>
+              <p>Gurugram, Haryana</p>
+              <p>devv0311 on GitHub</p>
+              <p>Frontend Developer</p>
+            </div>
+            <a href="https://github.com/devv0311" target="_blank" class="about__github-btn">
+              View GitHub Profile ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">02 / Projects</div>
+      <h2 class="section-title reveal">What I've Built</h2>
+      <p class="section-sub reveal">Real deployments, real code — not tutorials.</p>
+
+      <div class="projects__grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card reveal" data-index="01">
+          <div class="project-card__header">
+            <span class="project-card__tag">Café · Restaurant</span>
+            <span class="project-card__status project-card__status--live">Live ↗</span>
+          </div>
+          <h3 class="project-card__title">Brew & Co.</h3>
+          <p class="project-card__desc">A full café landing page with hero section, interactive menu, testimonials, WhatsApp CTA, Google Maps integration, and a mobile hamburger nav — built entirely with HTML, CSS, and vanilla JS.</p>
+          <div class="project-card__tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+          </div>
+          <div class="project-card__features">
+            <div>✓ Mobile hamburger menu</div>
+            <div>✓ WhatsApp CTA integration</div>
+            <div>✓ Google Maps embed</div>
+            <div>✓ Scroll animations</div>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://brew-co-pune.netlify.app/" target="_blank" class="btn btn--primary btn--sm">Live Demo ↗</a>
+            <a href="https://github.com/devv0311" target="_blank" class="btn btn--outline btn--sm">Code</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card reveal" data-index="02">
+          <div class="project-card__header">
+            <span class="project-card__tag">SaaS · Freelance Tool</span>
+            <span class="project-card__status project-card__status--live">Live ↗</span>
+          </div>
+          <h3 class="project-card__title">FlowBill</h3>
+          <p class="project-card__desc">Invoice generator SaaS landing page for freelancers. Features hero with product mockup, feature sections, 3-step how-it-works, pricing tiers, FAQ accordion with JS toggle, and scroll-reveal animations.</p>
+          <div class="project-card__tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+          </div>
+          <div class="project-card__features">
+            <div>✓ FAQ accordion toggle</div>
+            <div>✓ Scroll reveal animations</div>
+            <div>✓ Active nav on scroll</div>
+            <div>✓ 3-tier pricing table</div>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://flowbill-mu.vercel.app" target="_blank" class="btn btn--primary btn--sm">Live Demo ↗</a>
+            <a href="https://github.com/devv0311" target="_blank" class="btn btn--outline btn--sm">Code</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card project-card--this reveal" data-index="03">
+          <div class="project-card__header">
+            <span class="project-card__tag">Portfolio · Personal</span>
+            <span class="project-card__status project-card__status--current">You're here</span>
+          </div>
+          <h3 class="project-card__title">Portfolio</h3>
+          <p class="project-card__desc">Personal portfolio built to showcase my work. Single-page site with animated hero, project showcase, skills grid, and a working Formspree contact form.</p>
+          <div class="project-card__tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Formspree</span>
+          </div>
+          <div class="project-card__features">
+            <div>✓ Scroll reveal animations</div>
+            <div>✓ Working contact form</div>
+            <div>✓ Fully responsive</div>
+            <div>✓ Sticky active nav</div>
+          </div>
+          <div class="project-card__actions">
+            <a href="#contact" class="btn btn--primary btn--sm">Get In Touch ↗</a>
+            <a href="https://github.com/devv0311" target="_blank" class="btn btn--outline btn--sm">Code</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">03 / Skills</div>
+      <h2 class="section-title reveal">What I Work With</h2>
+
+      <div class="skills__grid">
+
+        <div class="skill-block reveal">
+          <div class="skill-block__icon">⟨/⟩</div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility-first, SEO structure, forms, media embeds</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="skill-block__icon">#</div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, responsive design, animations, custom properties, media queries</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="82"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="skill-block__icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, event handling, scroll effects, accordions, mobile nav</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="68"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="skill-block__icon">⚡</div>
+          <h3>Deployment</h3>
+          <p>Netlify, Vercel — live deploys, custom domains, CI/CD from GitHub</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="skill-block__icon">⌥</div>
+          <h3>Git & GitHub</h3>
+          <p>Version control, repos, commit history, README documentation</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="65"></div></div>
+        </div>
+
+        <div class="skill-block reveal">
+          <div class="skill-block__icon">◎</div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first approach, fluid layouts, cross-device testing</p>
+          <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
+        </div>
+
+      </div>
+
+      <div class="skills__note reveal">
+        <p>Currently learning: <strong>React.js</strong> · <strong>Node.js basics</strong> · <strong>Git advanced workflows</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">04 / Contact</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <p class="section-sub reveal">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__detail">
+            <span class="contact__detail-label">Email</span>
+            <span class="contact__detail-value">devx2738@gmail.com</span>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Location</span>
+            <span class="contact__detail-value">Remote | Gurugram, India</span>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">GitHub</span>
+            <a href="https://github.com/devv0311" target="_blank" class="contact__detail-value contact__detail-link">github.com/devv0311 ↗</a>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Status</span>
+            <span class="contact__detail-value contact__detail-available">● Available Now</span>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/mpqkzzly" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Riya Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="riya@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi Dev, I'd love to work with you on..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            Send Message →
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message sent! I'll reply within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="nav__logo">dev<span>.</span></span>
+        <p>Frontend Developer · Gurugram, India</p>
+      </div>
+      <div class="footer__right">
+        <a href="https://github.com/devv0311" target="_blank">GitHub</a>
+        <a href="#contact">Contact</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+    <div class="container footer__copy">
+      Built with HTML · CSS · JS — no frameworks, just code.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
